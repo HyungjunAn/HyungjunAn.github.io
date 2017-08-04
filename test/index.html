@@ -1,0 +1,9 @@
+---
+layout: blog
+---
+<ul id="post-list">
+    {% for post in site.categories.test %}
+        {% include 리스트레이아웃.html %}
+    {% endfor %}
+</ul>
+{% include pagination.html %}
