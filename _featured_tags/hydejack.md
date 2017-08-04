@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: list
 title: Hydejack
 slug: hydejack
 menu: true
