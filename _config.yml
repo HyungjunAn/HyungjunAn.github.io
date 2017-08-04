@@ -82,8 +82,6 @@ paginate_path:       '/page-:num/'
 #  Collections
 # -----------------------------------------------------------------------------
 
-permalink: /:categories/:title/
-
 collections:
   featured_categories:
     permalink:       /category/:name/
