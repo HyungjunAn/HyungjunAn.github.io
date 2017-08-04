@@ -2,7 +2,6 @@
 layout: post
 title: What's Jekyll?
 tags: [hyde]
-categories: [test]
 author: mdo
 ---
 
