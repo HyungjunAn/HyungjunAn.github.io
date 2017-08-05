@@ -3,6 +3,7 @@ layout: post
 title: What's Jekyll?
 tags: [hyde]
 category: Dev
+comments: true
 author: mdo
 ---
 
