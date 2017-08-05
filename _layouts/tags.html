@@ -3,19 +3,18 @@ layout: page
 permalink: /tags/
 ---
 
-
-<!--<div id="archives">-->
+<div id="archives">
 {% for tag in site.tags %}
-  {% assign currentdate = post.date | date: "%Y" %}
+  <!--{% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <!--<h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>-->
+    [><h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2><]
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
   {% include post-list-item.html post=post format="%d %b %Y" %}
-  {% if forloop.last %}</ul>{% endif %}
-  <!--<div class="archive-group">
+  {% if forloop.last %}</ul>{% endif %}-->
+  <div class="archive-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <div id="#{{ tag_name | slugize }}"></div>
     <p></p>
@@ -27,6 +26,6 @@ permalink: /tags/
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
     </article>
     {% endfor %}
-  </div>-->
+  </div>
 {% endfor %}
-<!--</div>-->
+</div>
