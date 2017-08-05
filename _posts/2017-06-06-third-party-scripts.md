@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Third Party Scripts (v6.3)'
+comments: true
 tags: [hydejack]
 ---
 
