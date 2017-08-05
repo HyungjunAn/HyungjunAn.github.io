@@ -2,7 +2,7 @@
 layout: post
 title: 'Third Party Scripts (v6.3)'
 comments: true
-tags: [hydejack]
+tags: [hyde, hydejack]
 ---
 
 This release makes including third party plugins easier.
