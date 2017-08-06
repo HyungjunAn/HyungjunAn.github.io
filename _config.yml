@@ -30,6 +30,9 @@ author:
 image:               /assets/img/me.jpg
 color:               '#4f86aa'
 
+# File Encoding
+encoding: utf-8
+
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Roboto Slab', Helvetica, Arial, sans-serif"
 
