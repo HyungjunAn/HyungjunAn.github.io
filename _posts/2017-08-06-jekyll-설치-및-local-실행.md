@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Jekyll 설치'
+title: 'Jekyll 설치 및 Local 실행'
 comments: true
 tags: [hyde]
 ---
@@ -19,6 +19,9 @@ gem install jekyll
 
 gem install bundler
 bundle install
+
+windows only
+chcp 65001
 bundle exec jekyll serve
 
 ~~~html
