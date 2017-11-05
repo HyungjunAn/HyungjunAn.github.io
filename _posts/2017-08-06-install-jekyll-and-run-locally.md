@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Install Jekyll and Run Locally'
+title: 'Jekyll 설치 및 Local에서 실행하기'
+slug: 'Install Jekyll and Run Locally'
 comments: true
 tags: [hyde]
 ---
