@@ -34,7 +34,7 @@ exclude:
   - TODO.md
   - work/
   
-timezone: Europe/Berlin
+timezone: Asia/Seoul
 defaults:
 - scope:
     path: _posts
