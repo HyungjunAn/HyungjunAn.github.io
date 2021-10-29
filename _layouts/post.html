@@ -4,30 +4,37 @@ layout: default
 
 <div class="container">
     <div class="row">        
-        <div class="col-md-10">
+        <div class="col-md-12">
+            <div class="post-title">
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-            <div  id="markdown-content-container" class="post">{{ content }}</div>            
-            <hr>
-            <ul class="pager">
-                {% if page.previous %}
-                <li class="previous">
-                    <a href="{{ page.previous.url | relative_url }}">
-                        <span aria-hidden="true">&larr;</span> Older
-                    </a>
-                </li>
-                {% endif %} {% if page.next %}
-                <li class="next">
-                    <a href="{{ page.next.url | relative_url }}">
-                      Newer <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </li>
-                {% endif %}
-            </ul>            
-        </div>      
-        <div class="toc">
-            <a href="#">&lt;Go to Top&gt;</a>
-            {% include toc.html html=content %}
+            </div>
+            <div class="post-and-toc">
+                <div>
+                <div id="markdown-content-container" class="post">{{ content }}</div>
+                <hr>
+                <ul class="pager">
+                    {% if page.previous %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | relative_url }}">
+                            <span aria-hidden="true">&larr;</span> Older
+                        </a>
+                    </li>
+                    {% endif %} {% if page.next %}
+                    <li class="next">
+                        <a href="{{ page.next.url | relative_url }}">
+                            Newer <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                </div>
+            
+                <div class="toc">
+                    <a href="#">&lt;Go to Top&gt;</a>
+                    {% include toc.html html=content %}
+                </div>
+            </div>
         </div>
 
         <div class="col-md-4">
@@ -62,8 +69,8 @@ layout: default
       return headerNodes;
     }
   
-    //var title = document.getElementsByClassName("post-title")[0];
-    //var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+    var title = document.getElementsByClassName("post-title")[0];
+    var titleY = window.pageYOffset + title.getBoundingClientRect().top;
     
     var article = document.getElementsByClassName("post")[0];
     var articleY = window.pageYOffset + article.getBoundingClientRect().top;
@@ -76,11 +83,11 @@ layout: default
     var before = undefined;
   
     document.addEventListener('scroll', function (e) {
-            console.log("window.scrollY: " + window.scrollY);    
-            console.log("articleY: " + articleY);            
-
             if (window.scrollY >= articleY - 60) {
-                toc.style.cssText = "position: fixed; top: 60px;";
+                console.log("window.scrollY: " + window.scrollY);
+                console.log("titleY: " + titleY);                
+                var top = window.scrollY - titleY;
+                toc.style.cssText = "top: " + top + "px;";                
             }
             else {
                 toc.style.cssText = "";
