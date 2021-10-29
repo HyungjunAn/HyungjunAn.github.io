@@ -3,24 +3,11 @@ layout: default
 ---
 
 <div class="container">
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="well">
-                <h4>RECENT POSTS</h4>
-                <ul class="list-unstyled post-list-container">
-                    {% for post in site.posts limit:10 %}
-                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
-                    {% endfor %}
-                    <li><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-8">
+    <div class="row">        
+        <div class="col-md-10">
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-            <div  id="markdown-content-container">{{ content }}</div>
+            <div  id="markdown-content-container" class="post">{{ content }}</div>            
             <hr>
             <ul class="pager">
                 {% if page.previous %}
@@ -36,8 +23,101 @@ layout: default
                     </a>
                 </li>
                 {% endif %}
-            </ul>
+            </ul>            
+        </div>      
+        <div class="toc">
+            <a href="#">&lt;Go to Top&gt;</a>
+            {% include toc.html html=content %}
         </div>
 
-    </div>
+        <div class="col-md-4">
+            <div class="well">
+                <h4>RECENT POSTS</h4>
+                <ul class="list-unstyled post-list-container">
+                    {% for post in site.posts limit:10 %}
+                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
 </div>
+
+<script>
+    // TODO: refactoring
+    // script for TOC
+    function getTOCNodes(master) {
+      var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+      var tocNodes = nodes.filter(function(elem) {
+          return elem.tagName == "A";
+      });
+      return tocNodes;
+    }
+    function getHeaderNodes(master) {
+      var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+      var headerNodes = nodes.filter(function(elem) {
+          return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
+      });
+      return headerNodes;
+    }
+  
+    //var title = document.getElementsByClassName("post-title")[0];
+    //var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+    
+    var article = document.getElementsByClassName("post")[0];
+    var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+  
+    var toc = document.getElementsByClassName("toc")[0];
+  
+    var headerNodes = getHeaderNodes(article);
+    var tocNodes = getTOCNodes(toc);
+  
+    var before = undefined;
+  
+    document.addEventListener('scroll', function (e) {
+            console.log("window.scrollY: " + window.scrollY);    
+            console.log("articleY: " + articleY);            
+
+            if (window.scrollY >= articleY - 60) {
+                toc.style.cssText = "position: fixed; top: 60px;";
+            }
+            else {
+                toc.style.cssText = "";
+            }
+
+            var current = headerNodes.filter(function (header) {
+                var headerY = window.pageYOffset + header.getBoundingClientRect().top;
+                return window.scrollY >= headerY - 60;
+            });
+
+            if (current.length > 0) {
+                current = current[current.length - 1];
+
+                var currentA = tocNodes.filter(function (tocNode) {
+                    return tocNode.innerHTML == current.innerHTML;
+                })
+
+                currentA = currentA[0];
+                if (currentA) {
+                    if (before == undefined) before = currentA;
+
+                    if (before != currentA) {
+                        before.classList.remove("toc-active");
+                        before = currentA;
+                    }
+
+                    currentA.classList.add("toc-active");
+                }
+                else {
+                    if (before)
+                        before.classList.remove("toc-active");
+                }
+            }
+            else {
+                if (before)
+                    before.classList.remove("toc-active");
+            }
+
+        }, false);
+  </script>
