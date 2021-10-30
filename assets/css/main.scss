@@ -5,6 +5,35 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
+  // --spacer: 1rem;
+  // --spacer-2: calc(var(--spacer) * 2);
+  // --spacer-3: calc(var(--spacer) * 3);
+
+  // // https://github.com/necolas/normalize.css/issues/665
+  // --body-font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  // --body-font-size: 16px;
+  // --body-line-height: 1.5;
+
+$--border-radius: .5em;
+
+  // // https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/
+  // --code-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /**
+   * Color
+   */
+$--body-bg-color: var(--oc-white);
+$--body-color: var(--oc-gray-9);
+$--code-bg-color: var(--oc-gray-1);
+$--heading-color: var(--oc-black);
+$--border-color: var(--oc-violet-2);
+$--link-color: var(--oc-blue-9);
+$--link-color-rgb: var(--oc-violet-2);
+$--link-hover-color: var(--oc-blue-7);
+$--info-color: var(--oc-green-9);
+$--warning-color: var(--oc-yellow-9);
+$--danger-color: var(--oc-red-9);
+
 @import
   {% if site.bootwatch %}
     "bootswatch/{{site.bootwatch | downcase}}/variables",
@@ -19,6 +48,57 @@
   "syntax-highlighting",
   "jekyll-doc-theme"
 ;
+
+.post-categories,
+.post-tags {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 0.4em;
+    }
+  }
+}
+
+.post-category {
+  border-bottom: 2px dotted $--border-color;
+}
+
+a.post-category {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    border-bottom-style: solid;
+    border-color: $--body-color;
+    text-decoration: none;
+  }
+}
+
+.post-tag {
+  padding: 0.1em 0.5em;
+  border: 1px solid $--border-color;
+  border-radius: $--border-radius;
+  //background-color: rgba($--link-color-rgb, 0.3);
+  background-color: $--link-color-rgb;
+  color: var(--oc-black);
+  font: bold;
+}
+
+a.post-tag {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($--link-color-rgb, 0.6);
+    text-decoration: none;
+  }
+}
 
 .container .post {
     @media (min-width: $screen-sm-min) {
@@ -38,7 +118,7 @@
   h1 {
     font-size: 30px;
   }
-  
+
   h2 {
     font-size: 30px;
   }
