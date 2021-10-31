@@ -49,6 +49,7 @@ $--danger-color: var(--oc-red-9);
   "jekyll-doc-theme"
 ;
 
+.alltags,
 .post-categories,
 .post-tags {
   display: inline-block;
@@ -63,40 +64,41 @@ $--danger-color: var(--oc-red-9);
       margin-right: 0.4em;
     }
   }
-}
 
-.post-category {
-  border-bottom: 2px dotted $--border-color;
-}
-
-a.post-category {
-  color: inherit;
-
-  &:hover,
-  &:focus {
-    border-bottom-style: solid;
-    border-color: $--body-color;
-    text-decoration: none;
+  .post-category {
+    border-bottom: 2px dotted $--border-color;
   }
-}
-
-.post-tag {
-  padding: 0.1em 0.5em;
-  border: 1px solid $--border-color;
-  border-radius: $--border-radius;
-  //background-color: rgba($--link-color-rgb, 0.3);
-  background-color: $--link-color-rgb;
-  color: var(--oc-black);
-  font: bold;
-}
-
-a.post-tag {
-  color: inherit;
-
-  &:hover,
-  &:focus {
-    background-color: rgba($--link-color-rgb, 0.6);
-    text-decoration: none;
+  
+  a.post-category {
+    color: inherit;
+  
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+      border-color: $--body-color;
+      text-decoration: none;
+    }
+  }
+  
+  .taxonomy,
+  .post-tag {
+    padding: 0.1em 0.5em;
+    border: 1px solid $--border-color;
+    border-radius: $--border-radius;
+    //background-color: rgba($--link-color-rgb, 0.3);
+    background-color: $--link-color-rgb;
+    color: var(--oc-black);
+    font: bold;
+  }
+  
+  a.post-tag {
+    color: inherit;
+  
+    &:hover,
+    &:focus {
+      background-color: rgba($--link-color-rgb, 0.6);
+      text-decoration: none;
+    }
   }
 }
 
@@ -184,4 +186,8 @@ a.post-tag {
   a:hover {
     color: theme-color;
   }
+}
+
+.alltags {
+
 }

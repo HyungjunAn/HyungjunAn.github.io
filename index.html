@@ -13,12 +13,14 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2 class="header-light regular-pad">이 블로그는</h2>
+            {% include recent_posts.html %}
+            <!-- <h2 class="header-light regular-pad">이 블로그는</h2>
               <p class="lead">저자의 S/W 개발 관련 지식을 기록하기 위한 곳입니다. 이 블로그 제작을 위해 사용된 기술은 다음과 같습니다. 블로그 소스를 ~~
-              behind <a href="https://pages.github.com">GitHub Pages</a>, </p>
+              behind <a href="https://pages.github.com">GitHub Pages</a>, </p> -->
         </div>
-        <div class="col-md-6 text-center">
-            <img src="{{ "/assets/img/jekyll-dark.png" | relative_url }}" alt="Jekyll logo" class="img-responsive">
+        <div class="col-md-6 text-center alltags">
+            {% include alltags.html %}
+            <!-- <img src="{{ "/assets/img/jekyll-dark.png" | relative_url }}" alt="Jekyll logo" class="img-responsive"> -->
         </div>
     </div>
     <hr>
