@@ -26,9 +26,9 @@ $--body-bg-color: var(--oc-white);
 $--body-color: var(--oc-gray-9);
 $--code-bg-color: var(--oc-gray-1);
 $--heading-color: var(--oc-black);
-$--border-color: var(--oc-violet-2);
+$--border-color: var(--oc-violet-1);
 $--link-color: var(--oc-blue-9);
-$--link-color-rgb: var(--oc-violet-2);
+$--link-color-rgb: var(--oc-violet-1);
 $--link-hover-color: var(--oc-blue-7);
 $--info-color: var(--oc-green-9);
 $--warning-color: var(--oc-yellow-9);
@@ -48,6 +48,15 @@ $--danger-color: var(--oc-red-9);
   "syntax-highlighting",
   "jekyll-doc-theme"
 ;
+
+.post {  
+  //position: relative;
+}
+
+.post-meta {
+  position: relative;
+  z-index: 1;
+}
 
 .alltags,
 .post-categories,
@@ -82,18 +91,15 @@ $--danger-color: var(--oc-red-9);
   
   .taxonomy,
   .post-tag {
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     border: 1px solid $--border-color;
     border-radius: $--border-radius;
     //background-color: rgba($--link-color-rgb, 0.3);
     background-color: $--link-color-rgb;
     color: var(--oc-black);
-    font: bold;
   }
   
-  a.post-tag {
-    color: inherit;
-  
+  a {
     &:hover,
     &:focus {
       background-color: rgba($--link-color-rgb, 0.6);
@@ -102,7 +108,7 @@ $--danger-color: var(--oc-red-9);
   }
 }
 
-.container .post {
+.container .post-content {
     @media (min-width: $screen-sm-min) {
       width: $container-sm - 200px;
     }
@@ -130,11 +136,11 @@ $--danger-color: var(--oc-red-9);
   position: relative;
   justify-content: space-between;
   display: flex;
+  z-index: 0;  
 }
 
 .toc {  
-  position: absolute;
-  top: 60px;
+  position: absolute;  
   right: 0px;
   //width: 100%;
   color: inherit;
@@ -186,8 +192,4 @@ $--danger-color: var(--oc-red-9);
   a:hover {
     color: theme-color;
   }
-}
-
-.alltags {
-
 }

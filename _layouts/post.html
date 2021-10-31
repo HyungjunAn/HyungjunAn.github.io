@@ -4,48 +4,48 @@ layout: default
 
 <div class="container">
     <div class="row">        
-        <div class="col-md-12">              
+        <div class="col-md-12 post">              
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="post-meta">
                 <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
                 {% if page.tags.size > 0 %}
-                <i class="post-tags-icon fa fa-tag"></i>            
+                <i class="post-tags-icon fa fa-tag"></i>           
                 <ul class="post-tags">
                     {%- for tag in page.tags -%}
+                    {% assign slugified_tag = tag | slugify %}
                     <li>
-                        {% assign slugified_tag = tag | slugify %}
-                        {%- if site.tags_path -%}
-                        <a class="post-tag" href="{{ site.tags_path | relative_url }}#{{ slugified_tag }}">{{ slugified_tag }}</a>
-                        {%- else -%}
-                        <span class="post-tag">{{ slugified_tag }}</span>
-                        {%- endif -%}
+                        {%- capture link -%}{{ "/sametagposts" }}#{{ slugified_tag }}{%- endcapture -%}
+                        <a class="post-tag" href="{{ link | relative_url }}">
+                            {{ slugified_tag }}
+                        </a>
                     </li>
                     {%- endfor -%}
-                </ul>            
+                </ul>
                 {% endif %}
             </div>
             
             <div class="post-and-toc">
                 <div>
-                <div id="markdown-content-container" class="post">{{ content }}</div>
-                <hr>
-                <ul class="pager">
-                    {% if page.previous %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | relative_url }}">
-                            <span aria-hidden="true">&larr;</span> Older
-                        </a>
-                    </li>
-                    {% endif %} {% if page.next %}
-                    <li class="next">
-                        <a href="{{ page.next.url | relative_url }}">
-                            Newer <span aria-hidden="true">&rarr;</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
+                    <div id="markdown-content-container" class="post-content">{{ content }}</div>
+                    <hr>
+                    <ul class="pager">
+                        {% if page.previous %}
+                        <li class="previous">
+                            <a href="{{ page.previous.url | relative_url }}">
+                                <span aria-hidden="true">&larr;</span> Older
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if page.next %}
+                        <li class="next">
+                            <a href="{{ page.next.url | relative_url }}">
+                                Newer <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
                 </div>
-            
+
                 <div class="toc">
                     <a href="#">&lt;Go to Top&gt;</a>
                     {% include toc.html html=content %}
@@ -91,10 +91,8 @@ layout: default
     var before = undefined;
   
     document.addEventListener('scroll', function (e) {
-            if (window.scrollY >= articleY - 60) {
-                console.log("window.scrollY: " + window.scrollY);
-                console.log("titleY: " + titleY);                
-                var top = window.scrollY - titleY;
+            if (window.scrollY >= articleY - 60) {                
+                var top = window.scrollY - titleY - 30;
                 toc.style.cssText = "top: " + top + "px;";                
             }
             else {

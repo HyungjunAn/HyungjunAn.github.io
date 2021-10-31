@@ -9,8 +9,7 @@ permalink: sametagposts.html
 <article class="container">
     <div>
         {% for tag in site.tags%}
-        {% capture slugified_taxonomy_name %}{{tag|first|slugize}}{% endcapture %}
-        {% assign tag_name = slugified_taxonomy_name%}
+        {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
         <div style="margin-bottom: 50px; display: none;" id="{{ tag_name }}">
             <h4 class="category-head">{{ tag_name }}</h4>
             <ul class="post-archives">

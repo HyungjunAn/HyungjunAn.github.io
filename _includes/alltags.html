@@ -27,13 +27,11 @@
           <li>
             {%- capture link -%}{{ "/sametagposts" }}#{{ slugified_taxonomy_name }}{%- endcapture -%}
             <a class="taxonomy" href="{{ link | relative_url }}">
-              <span>
-                {%- if page.type == 'tags' -%}
-                  {{ slugified_taxonomy_name }}
-                {%- else -%}
-                  {{ taxonomy_name }}
-                {%- endif -%}
-              </span>
+              {%- if page.type == 'tags' -%}
+                {{ slugified_taxonomy_name }}
+              {%- else -%}
+                {{ taxonomy_name }}
+              {%- endif -%}            
             </a>
           </li>
         {%- endif -%}
@@ -41,10 +39,3 @@
     {%- endfor -%}
   </ul>
 </div>
-
-<script>
-    function backToTop() {
-      const main = document.getElementById("site-main");
-      main.scrollTop = 0;
-    }
-</script>
