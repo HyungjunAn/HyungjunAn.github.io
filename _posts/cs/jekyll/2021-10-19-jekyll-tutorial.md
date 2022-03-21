@@ -8,14 +8,14 @@ tags: [jekyll, install, tutorial]
 
 ## Ruby 설치
 - [windows](https://rubyinstaller.org/downloads/)
+(msys 설치 필요, ridk install에서는 그냥 Enter)
 
 ## jekyll, bundle 설치
 ```
-$ gem install jekyll bundle
+$ gem install jekyll bundler
 ```
 
 ## 원하는 Jekyll 테마(github 소스) 다운로드
-
 ```
 ```
 
@@ -29,6 +29,7 @@ $ gem install jekyll bundle
 ```
 $ cd <JEKYLL_PROJECT_PATH>
 $ bundle install
+$ bundle add webrick
 ```
 
 ## jekyll 로컬 실행
