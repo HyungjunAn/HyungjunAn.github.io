@@ -26,11 +26,31 @@ tags: [summary]
 	- Framework: 프레임워크가 프로그래머의 코드를 동작함
 	- Library: 프로그래머의 코드가 라이브러리를 동작함
 - 참고
-	- [블로그](https://mangkyu.tistory.com/4])
+	- [blog](https://mangkyu.tistory.com/4])
+
+## UART vs. SPI vs. I2C
+- 특징
+	- UART: 비동기 시리얼 통신, 두 개의 핀으로 1:1 통신만 가능
+	- SPI: 동기식 시리얼 통신, 1:N 통신 가능, 하드웨어 설계시 핀이 많이 필요
+	- I2C: 동기식 시리얼 통신, N:N 통신 가능, 디바이스 당 핀을 2개(SCL, SDA)씩만 사용, 하드웨어적으로 단순, 소프트웨어 난이도가 상대적으로 높음(프로토콜)
+- 참고
+	- [blog](https://2innnnn0.tistory.com/11)
+	- [blog](https://coder-in-war.tistory.com/entry/Network-02-I2C%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
 --------------------------------------------------------------------------------
 
-# ?
+# Terminology
+
+## GPIO(General-Purpose I/O)
+- 개념: 마이크로 프로세서가 주변장치와 통신하기 위해 범용으로 사용되는 입출력 포트
+- 참고
+	- [wiki](https://ko.wikipedia.org/wiki/GPIO)
+	- [blog](https://rakuraku.tistory.com/148)
+	- [blog](https://junolefou.tistory.com/4)
+
+--------------------------------------------------------------------------------
+
+# Question
 
 ## 커널은 프로세스인가?
 - 개념
