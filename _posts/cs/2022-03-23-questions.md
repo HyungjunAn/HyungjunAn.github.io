@@ -58,10 +58,14 @@ tags: [summary]
 ## EEPROM(Electrically Erasable PROM) or NVRAM(Non-Volatile RAM)
 - On-Board 상태에서 사용자가 내용을 Byte 단위로 Read하거나 Write 할 수 있는 비휘발성 메모리
 - Write가 느려서 자주 바뀌는 변수를 저장하는 용도로는 적절하지 않음
+- 참고
+	- [blog](https://treeroad.tistory.com/entry/Flash-Memory%EC%99%80-EEPROM-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
 ## Flash memory
 - On-board 상태에서 사용자가 내용을 Byte 단위로 자유로이 Read 할 수 있지만, Write는 Page 또는 Sector 라고 불리는 Block 단위로만 수행 할 수 있는 변형된 EEPROM.
 - EEPROM에 비해 Write가 훨씬 빠름
+- 참고
+	- [blog](https://treeroad.tistory.com/entry/Flash-Memory%EC%99%80-EEPROM-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
 --------------------------------------------------------------------------------
 
