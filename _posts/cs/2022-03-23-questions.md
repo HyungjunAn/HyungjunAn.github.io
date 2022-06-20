@@ -48,6 +48,21 @@ tags: [summary]
 	- [blog](https://rakuraku.tistory.com/148)
 	- [blog](https://junolefou.tistory.com/4)
 
+## Blockchain(블록체인)
+- 주요 개념: 블록(데이터 단뒤)의 (해싱)연결, 다수의 참여자를 통해 데이터의 위변조를 막는 장점이 있음
+- 다수의 채굴기가 가장 최신(최장) 상태의 체인을 업데이트하기 위해 구동되며 이때 다양한 합의 알고리즘이 사용됨
+- 위변조가 어려운 이유
+	- 체인 구성 시 해싱이 사용되어 일부 블록의 위변조 발생 시 쉽게 인지 가능
+	- 소규모 그룹이 위변조가된 가장 최장의 체인을 구성하기 어려움(계산적으로 불가능)
+
+## EEPROM(Electrically Erasable PROM) or NVRAM(Non-Volatile RAM)
+- On-Board 상태에서 사용자가 내용을 Byte 단위로 Read하거나 Write 할 수 있는 비휘발성 메모리
+- Write가 느려서 자주 바뀌는 변수를 저장하는 용도로는 적절하지 않음
+
+## Flash memory
+- On-board 상태에서 사용자가 내용을 Byte 단위로 자유로이 Read 할 수 있지만, Write는 Page 또는 Sector 라고 불리는 Block 단위로만 수행 할 수 있는 변형된 EEPROM.
+- EEPROM에 비해 Write가 훨씬 빠름
+
 --------------------------------------------------------------------------------
 
 # Question
