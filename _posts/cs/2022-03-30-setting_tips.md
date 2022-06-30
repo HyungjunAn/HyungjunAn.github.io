@@ -56,5 +56,7 @@ Host ~~~
   IdentityFile ~/.ssh/id_rsa
 ```
 
-
+## 참고
+- [Blog 1](https://otugi.tistory.com/344)
+- [Blog 2](https://snwo.tistory.com/173)
 
