@@ -15,6 +15,78 @@
 - 반영이 필요한 브랜치
 - 는 ~에 따라 다르다
 
+
+오늘 내가 ~를 준비했다
+I prepare
+
+내가 ~ 가져가도 될까?
+Can I have (some) ~
+
+prepare vs. ready
+
+이게 니가 원하는 거 맞니?
+Is this what you want?
+
+내가 곧 가져갈게
+I'll take it right away
+
+q가말하는 거랑 이게 같은 빈도니까 이거면 된 것 같다.
+너는 ~게 생각하는거지?
+asond
+Im not sure that i like it
+But it can touch my hand if it likes
+four out of ten
+
+Mending
+
+There's nothing wrong with it.
+
+after all this
+
+## non Vs none
+- Non: means not when used as a prefix.
+- None: means zero, nothing when used as a noun.
+A good way to remember the difference is Non is only one letter different from Not.
+Out of the two words, 'non' is the most common. It appears about two times more
+frequently than 'none'.
+
+consensus
+비디오가 회전되지 않음
+돌려줘도 될까?
+
+~할게(당장의 느낌)
+I'm gonna ~
+Be going to
+
+수고하세요~
+Keep up the good work
+
+너무 오래돼서 기억 안남
+which vs that
+그렇다면~
+급하게 요청하는 점 양해 부탁합니다.
+
+That's why + S + V
+그래서 내가 ~ 하는 중이다
+
+할 수 있나요? / 해도 되나요? 어떻게 구별?
+
+Figma web assembly
+
+"~ 을 바꿈" 제목처럼 쓰려면 동명사? 분사?
+
+Change(ing / ed)?
+Temp
+Where do you think they went
+You said u live at seoul
+where did u say you live
+This is the man whose book is on the market.
+This is the book whose content is good
+whose apple is this?
+(이 사과 누구거야?)
+whose is this
+
+
 # Life
 - 1월 January (Jan.)
 - 2월 February (Feb.)
