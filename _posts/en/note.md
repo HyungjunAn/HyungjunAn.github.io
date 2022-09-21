@@ -1,6 +1,6 @@
 # TODO
 - 이슈에 사용된 비디오 Vs 이슈 자체를 찍은 영상
-- - ~를 컨트롤하는 기능을 추가함
+- ~를 컨트롤하는 기능을 추가함
 - 답변드립니다. ~~~(이거 시제 어떻게?)
 - 제대로 동작할거다
 - 선택할 수 있는 기능을 추가함
@@ -17,19 +17,20 @@
 - 나는 ~단계 까지 했다
 
 
-오늘 내가 ~를 준비했다
-I prepare
+- 오늘 내가 ~를 준비했다
+- I prepare
 
-내가 ~ 가져가도 될까?
-Can I have (some) ~
+- 내가 ~ 가져가도 될까?
+- Can I have (some) ~
+
 
 prepare vs. ready
 
-이게 니가 원하는 거 맞니?
-Is this what you want?
+- 이게 니가 원하는 거 맞니?
+- Is this what you want?
 
-내가 곧 가져갈게
-I'll take it right away
+- 내가 곧 가져갈게
+- I'll take it right away
 
 q가말하는 거랑 이게 같은 빈도니까 이거면 된 것 같다.
 너는 ~게 생각하는거지?
@@ -71,8 +72,6 @@ That's why + S + V
 그래서 내가 ~ 하는 중이다
 
 할 수 있나요? / 해도 되나요? 어떻게 구별?
-
-Figma web assembly
 
 "~ 을 바꿈" 제목처럼 쓰려면 동명사? 분사?
 
