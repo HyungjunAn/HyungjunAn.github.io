@@ -45,20 +45,10 @@ There's nothing wrong with it.
 
 after all this
 
-## non Vs none
-- Non: means not when used as a prefix.
-- None: means zero, nothing when used as a noun.
-A good way to remember the difference is Non is only one letter different from Not.
-Out of the two words, 'non' is the most common. It appears about two times more
-frequently than 'none'.
-
 consensus
 비디오가 회전되지 않음
 돌려줘도 될까?
 
-~할게(당장의 느낌)
-I'm gonna ~
-Be going to
 
 수고하세요~
 Keep up the good work
@@ -71,7 +61,6 @@ which vs that
 That's why + S + V
 그래서 내가 ~ 하는 중이다
 
-할 수 있나요? / 해도 되나요? 어떻게 구별?
 
 "~ 을 바꿈" 제목처럼 쓰려면 동명사? 분사?
 
@@ -86,8 +75,28 @@ whose apple is this?
 (이 사과 누구거야?)
 whose is this
 
+I'm gonna ~
+Be going to
 
-# Life
+
+## non Vs none
+- Non: means not when used as a prefix.
+- None: means zero, nothing when used as a noun.
+A good way to remember the difference is Non is only one letter different from Not.
+Out of the two words, 'non' is the most common. It appears about two times more
+frequently than 'none'.
+
+## 할 수 있다 vs 해도 된다
+문맥으로 구분함
+- Can that plane fly?(저 비행기는 날 수 있니?)
+- Can that plane fly here?(저 비행기가 여기서 날아도 되니?)
+
+## (내가 지금부터) ~할게
+- let me explain to you(설명해줄게)
+- I can explain to you(설명해줄게)
+- let me write(쓸게)
+
+## Month(ASOND)
 - 1월 January (Jan.)
 - 2월 February (Feb.)
 - 3월 March (Mar.)
