@@ -348,6 +348,12 @@ tags: [linux, summary]
 	|OR      |-o  | ||       |
 	|NOT     |!   | !        |
 	|--------|----|----------|
+
+	ex. 
+		if [ $VAL = 0 ] || [ $VAL = 1 ]
+		then
+			...
+		fi
 ```
 
 ## 분기문 case
