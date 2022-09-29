@@ -1,6 +1,6 @@
 # TODO
 - 이슈에 사용된 비디오 Vs 이슈 자체를 찍은 영상
-- - ~를 컨트롤하는 기능을 추가함
+- ~를 컨트롤하는 기능을 추가함
 - 답변드립니다. ~~~(이거 시제 어떻게?)
 - 제대로 동작할거다
 - 선택할 수 있는 기능을 추가함
@@ -14,8 +14,89 @@
 - 순간적인 과도
 - 반영이 필요한 브랜치
 - 는 ~에 따라 다르다
+- 나는 ~단계 까지 했다
 
-# Life
+
+- 오늘 내가 ~를 준비했다
+- I prepare
+
+- 내가 ~ 가져가도 될까?
+- Can I have (some) ~
+
+
+prepare vs. ready
+
+- 이게 니가 원하는 거 맞니?
+- Is this what you want?
+
+- 내가 곧 가져갈게
+- I'll take it right away
+
+q가말하는 거랑 이게 같은 빈도니까 이거면 된 것 같다.
+너는 ~게 생각하는거지?
+asond
+Im not sure that i like it
+But it can touch my hand if it likes
+four out of ten
+
+Mending
+
+There's nothing wrong with it.
+
+after all this
+
+consensus
+비디오가 회전되지 않음
+돌려줘도 될까?
+
+
+수고하세요~
+Keep up the good work
+
+너무 오래돼서 기억 안남
+which vs that
+그렇다면~
+급하게 요청하는 점 양해 부탁합니다.
+
+That's why + S + V
+그래서 내가 ~ 하는 중이다
+
+
+"~ 을 바꿈" 제목처럼 쓰려면 동명사? 분사?
+
+Change(ing / ed)?
+Temp
+Where do you think they went
+You said u live at seoul
+where did u say you live
+This is the man whose book is on the market.
+This is the book whose content is good
+whose apple is this?
+(이 사과 누구거야?)
+whose is this
+
+I'm gonna ~
+Be going to
+
+
+## non Vs none
+- Non: means not when used as a prefix.
+- None: means zero, nothing when used as a noun.
+A good way to remember the difference is Non is only one letter different from Not.
+Out of the two words, 'non' is the most common. It appears about two times more
+frequently than 'none'.
+
+## 할 수 있다 vs 해도 된다
+문맥으로 구분함
+- Can that plane fly?(저 비행기는 날 수 있니?)
+- Can that plane fly here?(저 비행기가 여기서 날아도 되니?)
+
+## (내가 지금부터) ~할게
+- let me explain to you(설명해줄게)
+- I can explain to you(설명해줄게)
+- let me write(쓸게)
+
+## Month(ASOND)
 - 1월 January (Jan.)
 - 2월 February (Feb.)
 - 3월 March (Mar.)
