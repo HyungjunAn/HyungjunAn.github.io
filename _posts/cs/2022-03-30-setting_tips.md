@@ -60,3 +60,10 @@ Host ~~~
 - [Blog 1](https://otugi.tistory.com/344)
 - [Blog 2](https://snwo.tistory.com/173)
 
+--------------------------------------------------------------------------------
+
+# Windows 탐색기 오늘, 내일 구분 없애기
+- 분류 방법 -> "없음"
+
+## 참고
+- [Blog](https://m-sooriya.tistory.com/266)
