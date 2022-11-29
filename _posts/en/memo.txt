@@ -2,6 +2,8 @@ Speak, Talk, Say, Tell
 - Say, Tell: 말하는 내용 중심
   - say: 청자 x(그가 ~라고 말했다)
   - tell: 주로 청자 o(그가 나에게 ~라고 말했다)
+    (tell a story/lie/joke)
+    어떤 메시지를 상대에게 전달한다는 의미가 있음
 - speak, talk: 말하는 행위 중심
 
 # TODO
