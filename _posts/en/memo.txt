@@ -1,3 +1,9 @@
+Speak, Talk, Say, Tell
+- Say, Tell: 말하는 내용 중심
+  - say: 청자 x(그가 ~라고 말했다)
+  - tell: 주로 청자 o(그가 나에게 ~라고 말했다)
+- speak, talk: 말하는 행위 중심
+
 # TODO
 - 이슈에 사용된 비디오 Vs 이슈 자체를 찍은 영상
 - ~를 컨트롤하는 기능을 추가함
