@@ -67,6 +67,11 @@ tags: [summary]
 - 참고
 	- [blog](https://treeroad.tistory.com/entry/Flash-Memory%EC%99%80-EEPROM-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
+## AC 전원 케이블 종류
+- 2구 8자 케이블
+- 3구 클로버케이블
+- 3구 각케이블
+
 --------------------------------------------------------------------------------
 
 # Question
