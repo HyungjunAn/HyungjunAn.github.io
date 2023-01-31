@@ -7,6 +7,7 @@ Speak, Talk, Say, Tell
 - speak, talk: 말하는 행위 중심
 
 # TODO
+다음 명령어의 결과가 어떻게 되나요?
 다음의 ~개를 ~~해라
 (ex. 다음 두 가지 중 편한 것을 골라라)
 헷갈린다 / confused
