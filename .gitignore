@@ -5,4 +5,3 @@ _site
 .bundle
 vendor/bundle
 *.swp
-Gemfile.lock

@@ -29,7 +29,6 @@ $ gem install jekyll bundler
 ```
 $ cd <JEKYLL_PROJECT_PATH>
 $ bundle install
-$ bundle add webrick
 ```
 
 ## jekyll 로컬 실행
