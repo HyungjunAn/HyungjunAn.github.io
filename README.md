@@ -1,9 +1,10 @@
 # How to Run with Ruby on Winodws
-## Ruby 설치
-- [windows에서 Ruby 설치](https://rubyinstaller.org/downloads/)
-(msys 설치 필요, ridk install에서는 그냥 Enter)
+## Ruby Installer 설치
+- [Recommanded Version](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.2.2-1/rubyinstaller-devkit-3.2.2-1-x64.exe)
+- [Official Page](https://rubyinstaller.org/downloads/)
+- msys 설치 필요, ridk install에서는 msys2 선택 후 Enter
 
-## 빌드
+## Build
 ```bash
 $ gem install bundler
 $ cd <PROJECT_FOLDER>
