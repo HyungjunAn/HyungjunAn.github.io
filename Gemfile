@@ -23,5 +23,4 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
-
-#gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.7"
