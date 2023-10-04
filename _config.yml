@@ -32,8 +32,7 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-  - TODO.md
-  - work/
+  - TODO.md  
   - .git/  
   
 timezone: Asia/Seoul
